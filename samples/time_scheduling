@@ -1,6 +1,8 @@
 import schedule
 import time
+import datetime
 
+#schedule
 def job():
     print("Anshul is working...")
 # Schedule the job every 5 seconds
@@ -8,3 +10,15 @@ schedule.every(5).seconds.do(job)
 while True:
     schedule.run_pending()
     time.sleep(1)
+
+#datetime
+today = datetime.date.today()
+print("Today's date:", today)
+now = datetime.datetime.now()
+print("Current date and time:", now)
+print("Current year:", now.year)
+print("Current month:", now.month)
+print("Current day:", now.day)
+print("Current hour:", now.hour)
+print("Current minute:", now.minute)
+print("Current second:", now.second)
